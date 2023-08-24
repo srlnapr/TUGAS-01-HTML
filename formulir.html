@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+ <style>
+ .centered {
+  text-align: center;
+        }
+ </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+</head>
+<body>
+    <div style="border: 1px solid black;">
+        <h1 align="center">Latihan Formulir</h1>
+    <form style="padding: 15px;">
+        <fieldset>
+            <legend align="center">Input Data</legend>
+            <table>
+                <tr>
+                    <td><label for="nama">Nama</label></td>
+                    <td style="padding: 5px;"><span>:</span></td>
+                    <td style="padding: 5px;"><input type="text" name="nama" id="nama" placeholder="Masukan Nama Lengkap" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td style="padding: 5px;"><span>:</span></td>
+                    <td style="padding: 5px;"><input type="password" name="password" id="password" required /></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td style="padding: 5px;"><span>:</span></td>
+                    <td style="padding: 5px;"><input type="date" id="tanggal" name="tanggal" title="Pilih tanggal lahir" required /></td>
+                </tr>
+                <tr>
+                    <td><label>Jenis kelamin</label></td>
+                    <td style="padding: 5px;"><span>:</span></td>
+                    <td style="padding: 5px;">
+                        <label><input type="radio" name="jenis_kelamin" value="laki-laki" required /> Laki-laki</label>
+                        <label><input type="radio" name="jenis_kelamin" value="perempuan" required /> Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="nomer_telepon">Nomer Telepon</label></td>
+                    <td style="padding: 5px;"><span>:</span></td>
+                    <td style="padding: 5px;"><input type="text" name="nomer_telepon" pattern="[0-9]+" placeholder="Masukan Nomer Telepon" title="Masukkan nomor telepon dengan angka saja" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="Asal_Kota">Asal Kota</label></td>
+                    <td style="padding: 5px;"><span>:</span></td>
+                    <td style="padding: 5px;">
+                        <select name="Asal_Kota" id="Asal_Kota" required>
+                            <option value="" disabled selected>Pilih Asal Kota</option>
+                            <option value="Purwokerto" selected>Purwokerto</option>
+                            <option value="Cilacap">Cilacap</option>
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Bandung">Bandung</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="alamat">Alamat</label></td>
+                    <td style="padding: 5px;"><span>:</span></td>
+                    <td style="padding: 5px;"><textarea name="alamat" id="alamat" placeholder="Silahkan Katakan Isi Alamat"></textarea></td>
+                </tr>
+                
+                <tr>
+                    <td ><label for="hobi">Hobi</label></td>
+                    <td style="padding: 5px;"><span>:</span></td>
+                    <td><input type="checkbox" name="membaca_buku">Membaca Buku</td>
+                    <td><input type="checkbox" name="menulis" checked>Menulis</td>
+                    <td><input type="checkbox" name="memancing">Memancing</td>
+                </tr>
+                <tr>
+                    <td><label for="makanan_favorit">Makanan Favorit</label></td>
+                    <td style="padding: 5px;"><span>:</span></td>
+                    <td style="padding: 5px;"><input type="makanan_favorit" name="makanan_favorit" id="makanan_favorit" required /></td>
+                </tr>
+                <tr>
+                    <td colspan="10"></td>
+                   <td><input type="submit" name="submit" value="Submit"></td> 
+                   <td><input type="reset" name="reset" value="Reset"></td> 
+                </tr>
+                
+            </table>
+        </fieldset>
+    </form>
+    <div class="centered">
+      <button><a href="">Next Page</a></button>   
+    </div>
+    <br>
+</div>
+</body>
+</html>
